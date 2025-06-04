@@ -1,112 +1,37 @@
-<!DOCTYPE HTML>
-<!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Generic - Phantom by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
+// components/Footer.jsx
+import React from 'react';
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+export default function Footer() {
+  return (
+    <footer className="bg-blue-900 text-center text-white text-sm py-6">
+      <div className="flex justify-center space-x-4 mb-2">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="X" className="h-5" /></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" className="h-5" /></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" className="h-5" /></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="Instagram" className="h-5" /></a>
+      </div>
 
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
-								</a>
+      <div className="max-w-4xl mx-auto text-left px-4 py-4">
+        <h2 className="text-lg font-bold mb-2">ARTIFICIAL INTELLIGENCE GUIDELINES</h2>
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+        <h3 className="font-semibold mt-4">Protect Confidential Data</h3>
+        <p className="mb-2">Do not enter data classified as confidential (PII, student data, medical information, etc.) into publicly-available Generative AI tools, in accordance with the district’s existing policies and FERPA guidelines (BOE Policy 8335). Information shared with Generative AI tools using default settings is not private and could expose proprietary or sensitive information to unauthorized parties.</p>
 
-						</div>
-					</header>
+        <h3 className="font-semibold mt-4">Adhere to Existing Academic Policy</h3>
+        <p className="mb-2">Review Kingsway’s student handbooks and plagiarism policy (BOE Policy 5701). Faculty should communicate permitted uses, if any, of generative AI for any academic assignment or learning activity. Students are also encouraged to ask their instructors for clarification about the permitted use of AI.</p>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Ipsum veroeros</a></li>
-							<li><a href="generic.html">Tempus etiam</a></li>
-							<li><a href="generic.html">Consequat dolor</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-					</nav>
+        <h3 className="font-semibold mt-4">Review Generated Content</h3>
+        <p className="mb-2">AI-generated content can be inaccurate, misleading, biased, entirely fabricated (sometimes called “hallucinations”) or may contain copyrighted material. You are responsible for any content/products you publish that include AI-generated material. Cross reference AI-generated content with trusted and creditable sources.</p>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<h1>Generic Page</h1>
-							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-						</div>
-					</div>
+        <h3 className="font-semibold mt-4">Questions/Concerns?</h3>
+        <p className="mb-2">Continue following digital literacy best practices, and for any inquiries or uncertainties about the usage or implementation of artificial intelligence, please submit a support ticket to the Technology Department or Instructional Technology Coaches for additional assistance and guidance. Educators are also encouraged to engage in discourse related to the use of AI to enhance student learning outcomes with their PLT and Instructional Supervisor.</p>
+      </div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<h2>Get in touch</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
-								</form>
-							</section>
-							<section>
-								<h2>Follow</h2>
-								<ul class="icons">
-									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+      <button className="bg-red-700 hover:bg-red-800 text-white px-6 py-2 rounded">Support Kingsway</button>
 
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+      <div className="mt-4">
+        ©2025 Kingsway Regional High School | <a href="#" className="hover:underline">AI Playbook</a> | <a href="#" className="hover:underline">Privacy Policy</a> | <a href="#" className="hover:underline">Accessibility</a>
+      </div>
+    </footer>
+  );
+}
